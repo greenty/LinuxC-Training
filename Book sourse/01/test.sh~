@@ -1,0 +1,15 @@
+#!/bin/bash
+while :
+do
+  echo -n "Input a number : "
+  read IN							#读入数字
+  case $IN in
+  1|2|3)						#对1~3执行相同操作
+    echo "number 1~3"
+    ;;
+  *)
+    echo "number > 3, exit"
+    break						#跳出整个循环
+    ;;
+  esac
+done
